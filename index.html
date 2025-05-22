@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathias' Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <style>
+        
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica', sans-serif;
+            height: 100%;
+        }
+        #navbar{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+            background-color: #59788E;
+        }
+
+        .navbar-brand {
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #63C5DA;
+            text-decoration: underline;
+        }
+
+        .modal-content{
+            background-color: #ffffff;
+
+        }
+
+
+        #myimg{
+            position: relative;
+
+        }
+
+        #my_img .carousel-inner img {
+            height: 90vh;
+            object-fit: cover;
+        }
+
+        .carousel-caption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0);
+            border-radius: 10px;
+            width: 80%;
+        }
+
+        .carousel-caption h1 {
+            font-size: 4rem;
+        }
+
+        .carousel-caption p {
+            font-size: 1.1rem;
+        }
+
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #about {
+            padding: 0;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        .card {
+            position: relative;
+            transition: all 0.3s ease;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        .card-link{
+            text-decoration: none;
+        }
+
+        .card:hover {
+            transform: scale(1.05); 
+        }
+
+        .card:hover .coming-soon-overlay {
+            opacity: 1; 
+        }
+
+        .coming-soon-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6); 
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0; 
+            transition: opacity 0.3s ease;
+            z-index: 0;
+        }
+
+        .coming-soon-overlay h5 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .card-img-top {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        .card-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.25rem;
+            color: #333;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            color: #555;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-light">
+        <div id ="navbar" class="container-fluid">
+            <a class="navbar-brand" href="#">Mathias' Portfolio</a>
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="contactModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">My Contact</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Email:</strong> <a href="mailto:mathias.cheung@gmail.com">mathias.cheung@gmail.com</a></li>
+                        <li><strong>Phone:</strong> +1 (647) 613-9841</li>
+                        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mathias-cheung-71949b291/" target="_blank">My LinkedIn Page</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="about">
+        <div id="my_img" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#my_img" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#my_img" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#my_img" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#my_img" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#my_img" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#my_img" data-bs-slide-to="5"></button>
+                <button type="button" data-bs-target="#my_img" data-bs-slide-to="6"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="images/image_123650291 (7).JPG" alt="p1" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                <img src="images/image_123650291 (5).JPG" alt="p2" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                <img src="images/image_123650291 (6).JPG" alt="p3" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                <img src="images/image_123650291 (2).JPG" alt="p4" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                <img src="images/image_123650291 (4).JPG" alt="p5" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                <img src="images/image_123650291 (8).JPG" alt="p6" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                <img src="images/image_123650291 (9).JPG" alt="p7" class="d-block w-100">
+                </div>
+              
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#my_img" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#my_img" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+            <div class="carousel-caption d-none d-md-block">
+                <h1 class="text-white">Mathias Cheung</h1>
+                <p class="text-white">Hello, my name is Mathias, a third-year Computer Engineering student at the University of Ottawa with a passion for soccer and photography. I enjoy combining these interests with my love for technology, always seeking new ways to apply what I learn to tackle real-world challenges. Currently, I'm exploring UI design through SEG3125, where I aim to channel my creativity into developing intuitive, user-focused interfaces.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Projects</h2>
+            <div class="row">
+                <!-- Case Study 1 -->
+                <div class="col-md-4 mb-4">
+                    <a href ="service.html" class="card-link">
+                        <div class="card">
+                            <img src="images/Service_logo.jpg" class="card-img-top" alt="Case Study 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Service Site</h5>
+                                <p class="card-text">Avaliable on June 8, 2025</p>
+                            </div>
+                            <div class="coming-soon-overlay">
+                                <h5>Coming Soon</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="col-md-4 mb-4">
+                    <a href ="game.html" class="card-link">
+                        <div class="card">
+                            <img src="images/Game_logo.jpg" class="card-img-top" alt="Case Study 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Gaming</h5>
+                                <p class="card-text">Avaliable on June 22, 2025</p>
+                                
+                            </div>
+                            <div class="coming-soon-overlay">
+                                <h5>Coming Soon</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Case Study 3 -->
+                <div class="col-md-4 mb-4">
+                    <a href ="ecommerce.html" class="card-link">
+                        <div class="card">
+                            <img src="images/ecom_logo.jpg" class="card-img-top" alt="Case Study 3">
+                            <div class="card-body">
+                                <h5 class="card-title">E-Commerce site</h5>
+                                <p class="card-text">Avaliable on July 6, 2025</p>
+                                
+                            </div>
+                            <div class="coming-soon-overlay">
+                                <h5>Coming Soon</h5>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+
+                <!-- Case Study 4 -->
+                <div class="col-md-4 mb-4">
+                    <a href ="sport.html" class="card-link"> 
+                        <div class="card">
+                            <img src="images/Arsenal_logo.png" class="card-img-top" alt="Case Study 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Soccer Analytics</h5>
+                                <p class="card-text">Avaliable on July 20, 2025</p>
+                                
+                            </div>
+                            <div class="coming-soon-overlay">
+                                <h5>Coming Soon</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener("click", function(e) {
+                e.preventDefault()
+                document.querySelector(this.getAttribute("href")).scrollIntoView({
+                    behavior: "smooth"  // Smooth scrolling
+                });
+            });
+        });
+    </script>
+
+</body>
+ 
+
+</html>
+
